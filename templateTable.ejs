@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+        <% header.forEach(column => { %>
+            <th><%= column %></th>
+        <% }) %>
+        </tr>
+    </thead>
+    <tbody>
+        <% rows.forEach(row => { %>
+        <tr>
+            <% row.forEach(data => { %>
+                <td><%= data %></td>
+            <% }) %>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
